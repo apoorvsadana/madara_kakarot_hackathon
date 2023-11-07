@@ -17,4 +17,4 @@ RUN ./madara setup --chain=dev --base-path=/.madara --from-remote
 EXPOSE 9944 9615 30333
 
 # Start madarae
-CMD ["./madara", "--chain=dev", "--base-path=/.madara", "--force-authoring","--alice","--rpc-external","--rpc-methods=unsafe"]
+CMD ["sh", "-c", "./madara setup --chain=dev --base-path=/.madara --from-remote && ./madara --chain=dev --base-path=/.madara --force-authoring--alice--rpc-external--rpc-methods=unsafe"]
