@@ -12,7 +12,6 @@ RUN cp x86_64-unknown-linux-gnu-madara madara
 
 # Setup madara
 RUN chmod +x ./madara
-RUN ./madara setup --chain=dev --base-path=/.madara --from-remote
 
 EXPOSE 9944 9615 30333
 
